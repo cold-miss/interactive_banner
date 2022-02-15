@@ -21,7 +21,7 @@ a {
 .banner > h1 {
     position: absolute;
     display: flex;
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 700;
     color: #EA8628;
     /* text-shadow: 0.2px 0.2px 1px rgb(168, 48, 0); */
