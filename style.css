@@ -1,0 +1,112 @@
+/* style.css */
+
+
+a {
+    text-decoration: none;
+    width: 1000px;
+    height: 400px;
+    font-family: 'Unna', serif;
+    background-image: url(./images/bg.jpg);
+}
+
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner > h1 {
+    position: absolute;
+    display: flex;
+    font-size: 60px;
+    font-weight: 700;
+    color: #EA8628;
+    /* text-shadow: 0.2px 0.2px 1px rgb(168, 48, 0); */
+    -webkit-text-fill-color: #EA8628;
+    top: 260px;
+}
+
+.banner > .img {
+    position: absolute;
+    animation: img 1.6s linear infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+
+.banner > .flower1 {
+    left: -30px;
+    top: -20px;
+}
+
+.banner > .leaves1 {
+    left: -10px;
+    bottom: -5px;   
+}
+
+.banner > .leaves2 {
+    right:0;
+    top:0;
+}
+
+.banner > .flower2 {
+    right:0;
+    bottom:-2px
+}
+
+.banner > .moscato {
+    position: absolute;
+    top: 37px;
+    left: 337px;
+    animation: bottle 2s 6s infinite;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.22, 1.275);
+    animation-direction: alternate;
+}
+
+@keyframes bottle {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-10deg);
+    }
+    20% {
+        transform: roatate(10deg)
+    }
+    100% {
+    }
+
+}
+
+
+
+@keyframes img {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(1.2) rotate(3.5deg);
+    }
+}
+
+.banner > h1 > div {
+    text-shadow: 1px 1px 2.7px #66615c;  
+    animation: text 1s 0.2s linear ;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
